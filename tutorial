@@ -1,0 +1,15 @@
+def calculate_average(numbers):
+    """与えられた数値リストの平均を計算する"""
+    if len(numbers) == 0:
+        return 0
+    return sum(numbers) / len(numbers)
+
+if __name__ == "__main__":
+    # サンプルデータ
+    numbers = [10, 20, 30, 40, 50]
+    
+    # 平均値の計算
+    average = calculate_average(numbers)
+    
+    # 結果の表示
+    print(f"数値リスト {numbers} の平均値は {average} です。")
